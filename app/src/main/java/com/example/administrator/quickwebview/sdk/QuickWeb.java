@@ -28,9 +28,9 @@ public class QuickWeb {
      * @param url request resource url
      */
     public WebResourceResponse requestResource(String url) {
-//      only cache js  css  png gif
-//      if you want to  cache ,can add resource
-//      if want to cache all,remove this condition
+//      only cache js,css,png and gif
+//      if you want to cache ,can add resource type
+//      if you want to cache all,remove this condition
         if (!url.contains(".js") && !url.contains(".css") && !url.contains(".png") && !url.contains(".gif")) {
             return null;
         }
